@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VeganFriendly</string>
+    <string name="view_list">View as list</string>
+    <string name="view_map">View on map</string>
+    <string name="no_internet_connection">No internet access</string>
+    <string name="waiting_location">Waiting for location...</string>
+    <string name="your_location">Your location</string>
+    <string name="error_getting_restaurants">Error retrieving restaurant list.</string>
+</resources>
