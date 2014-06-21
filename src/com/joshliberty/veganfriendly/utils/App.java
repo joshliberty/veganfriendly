@@ -18,12 +18,12 @@ public class App {
 
     public static void saveSetting(Context context, String name, String value){
         SharedPreferences prefs = context.getSharedPreferences(PREFERENCES, Context.MODE_PRIVATE);
-        prefs.edit().putString(name, value).commit();
+        prefs.edit().putString(name, value).apply();
     }
 
     public static void saveSetting(Context context, String name, Long value){
         SharedPreferences prefs = context.getSharedPreferences(PREFERENCES, Context.MODE_PRIVATE);
-        prefs.edit().putLong(name, value).commit();
+        prefs.edit().putLong(name, value).apply();
     }
 
 }

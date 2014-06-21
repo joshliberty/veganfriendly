@@ -22,9 +22,7 @@
   </component>
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
-      <GlobalState>
-        <option name="visible" value="false" />
-      </GlobalState>
+      <GlobalState />
     </option>
   </component>
   <component name="AndroidLayouts">
@@ -34,17 +32,50 @@
     <layouts>
       <layout url="file://$PROJECT_DIR$/res/layout/main.xml">
         <config>
-          <device>Nexus 4</device>
+          <device>Nexus 5</device>
           <theme>@android:style/Theme.Holo</theme>
         </config>
       </layout>
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="WelcomeActivity" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e750a92-82f0-4dad-95bb-d535e7569072" name="Default" comment="" />
+    <list default="true" id="5e750a92-82f0-4dad-95bb-d535e7569072" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/ActiveAndroid.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/com_google_code_gson_gson_2_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/google_play_services.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/src.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/com/joshliberty/veganfriendly/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/com/joshliberty/veganfriendly/Manifest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/com/joshliberty/veganfriendly/R.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/local.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/WelcomeActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/ApiClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/ErrorCodes.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/GenericApiResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/RestaurantListCallback.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/utils/App.java" afterPath="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/utils/App.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/MapActivity.java" afterPath="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/MapActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VeganFriendly.iml" afterPath="$PROJECT_DIR$/VeganFriendly.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+    </list>
     <ignored path="VeganFriendly.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -98,8 +129,8 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/ApiClient.java" line="123" class="com.joshliberty.veganfriendly.api.ApiClient" package="com.joshliberty.veganfriendly.api">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/MapActivity.java" line="80" class="com.joshliberty.veganfriendly.WelcomeActivity" package="com.joshliberty.veganfriendly">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -114,22 +145,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/ApiClient.java" line="165" class="com.joshliberty.veganfriendly.api.ApiClient.ApiCall" package="com.joshliberty.veganfriendly.api">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/WelcomeActivity.java" line="127" class="com.joshliberty.veganfriendly.WelcomeActivity" package="com.joshliberty.veganfriendly">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/MapActivity.java" line="225" class="com.joshliberty.veganfriendly.WelcomeActivity.OurLocationListener" package="com.joshliberty.veganfriendly">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -154,90 +170,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ApiClient.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/ApiClient.java">
+      <file leaf-file-name="MapActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/MapActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="39" selection-start="3416" selection-end="3416" vertical-scroll-proportion="-6.9259257" vertical-offset="839" max-vertical-offset="2664">
+            <state line="109" column="31" selection-start="4276" selection-end="4276" vertical-scroll-proportion="0.39202657" vertical-offset="962" max-vertical-offset="2988">
               <folding>
-                <element signature="e#3796#3811#0" expanded="true" />
+                <element signature="e#1540#1560#0" expanded="true" />
+                <element signature="method#onClick#0;class#MapActivity#0" expanded="false" />
+                <element signature="method#moveCameraToLocation#0;class#MapActivity#0" expanded="false" />
+                <element signature="method#setUserLocation#0;class#MapActivity#0" expanded="false" />
+                <element signature="method#setupLocationClient#0;class#MapActivity#0" expanded="false" />
+                <element signature="e#4626#4656#0" expanded="true" />
+                <element signature="e#4849#4861#0" expanded="true" />
+                <element signature="method#success#0;class#MapActivity#0" expanded="false" />
+                <element signature="method#failure#0;class#MapActivity#0" expanded="false" />
+                <element signature="e#6470#6515#0" expanded="true" />
+                <element signature="method#onConnected#0;class#MapActivity#0" expanded="false" />
+                <element signature="method#onDisconnected#0;class#MapActivity#0" expanded="false" />
+                <element signature="method#onConnectionFailed#0;class#MapActivity#0" expanded="false" />
+                <element signature="class#OurLocationListener#0;class#MapActivity#0" expanded="false" />
+                <element signature="method#onLocationChanged#0;class#OurLocationListener#0;class#MapActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestaurantListCallback.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/RestaurantListCallback.java">
+      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="16" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="324">
+            <state line="15" column="0" selection-start="544" selection-end="544" vertical-scroll-proportion="-10.384615" vertical-offset="0" max-vertical-offset="432">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WelcomeActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/WelcomeActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.08223684" vertical-offset="184" max-vertical-offset="792">
-              <folding>
-                <element signature="docComment;method#onCreate#0;class#WelcomeActivity#0" expanded="false" />
-                <element signature="method#onCreate#0;class#WelcomeActivity#0" expanded="false" />
-                <element signature="e#1971#2002#0" expanded="false" />
-                <element signature="method#setUserLocation#0;class#WelcomeActivity#0" expanded="false" />
-                <element signature="method#getRestaurants#0;class#WelcomeActivity#0" expanded="false" />
-                <element signature="method#getLocationService#0;class#WelcomeActivity#0" expanded="false" />
-                <element signature="method#onSuccess#0;class#WelcomeActivity#0" expanded="false" />
-                <element signature="method#onFailure#0;class#WelcomeActivity#0" expanded="false" />
-                <element signature="class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-                <element signature="method#onLocationChanged#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-                <element signature="method#onStatusChanged#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-                <element signature="method#onProviderEnabled#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-                <element signature="method#onProviderDisabled#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-                <marker date="1402262649871" expanded="false" signature="2013:3255" placeholder="..." />
-              </folding>
-            </state>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Restaurant.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/models/Restaurant.java">
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="42" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1170">
-              <folding>
-                <element signature="docComment;class#Restaurant#0" expanded="false" />
-                <element signature="method#getLocation#0;class#Restaurant#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="56" selection-start="800" selection-end="800" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
-              <folding>
-                <element signature="e#688#706#0" expanded="true" />
-                <element signature="e#1064#1103#0" expanded="true" />
-                <element signature="e#1342#1360#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/utils/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="29" selection-start="952" selection-end="952" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GeoUtil.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/utils/GeoUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="44" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+            <state line="4" column="56" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
               <folding />
             </state>
           </provider>
@@ -253,16 +226,13 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api_client/ApiClient.java" />
         <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/GenericApiResult.java" />
         <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/utils/NetworkUtil.java" />
         <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/ErrorCodes.java" />
         <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/RestaurantListCallback.java" />
-        <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/MapActivity.java" />
         <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/utils/GeoUtil.java" />
         <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/utils/SettingsStore.java" />
-        <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/utils/App.java" />
         <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/DBAdapter.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/data/Restaurant.java" />
@@ -270,7 +240,12 @@
         <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/data/OpeningTime.java" />
         <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/models/Restaurant.java" />
         <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/ApiClient.java" />
+        <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/ApiService.java" />
         <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/WelcomeActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/utils/App.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/src/com/joshliberty/veganfriendly/MapActivity.java" />
       </list>
     </option>
   </component>
@@ -303,7 +278,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -384,7 +359,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -405,7 +380,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus4" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SDKs/Android/android-sdk/extras/android/support/v4/android-support-v4.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -419,6 +394,7 @@
     <property name="Repository.Attach.Sources" value="true" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -627,10 +603,6 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -649,6 +621,10 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -761,7 +737,7 @@
     </configuration>
     <configuration default="false" name="VeganFriendly" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="VeganFriendly" />
-      <option name="ACTIVITY_CLASS" value="com.joshliberty.veganfriendly.WelcomeActivity" />
+      <option name="ACTIVITY_CLASS" value="com.joshliberty.veganfriendly.MapActivity" />
       <option name="MODE" value="specific_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -823,43 +799,44 @@
       <workItem from="1402000212555" duration="1734000" />
       <workItem from="1402030634527" duration="3277000" />
       <workItem from="1402039949846" duration="4973000" />
-      <workItem from="1402045587759" duration="16412000" />
+      <workItem from="1402045587759" duration="20373000" />
+      <workItem from="1403333860899" duration="14818000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30784000" />
+    <option name="totallyTimeSpent" value="49563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="-3" width="1330" height="775" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943925" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917318" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39878234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32724506" sideWeight="0.73286605" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50076103" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.50076103" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943925" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26012462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26012462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.26713395" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -885,61 +862,24 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/ApiClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="23" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3186">
-          <folding>
-            <element signature="e#3796#3811#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/GenericApiResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="738">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/RestaurantListCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/models/Restaurant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="11" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.0" vertical-offset="1242" max-vertical-offset="1692">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="58" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="576">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/MapActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="58" selection-start="902" selection-end="902" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="522">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_places_list.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_places_list.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="234">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/PlacesListActivity.java">
@@ -952,61 +892,51 @@
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="38" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="756">
-          <folding>
-            <element signature="e#688#706#0" expanded="true" />
-            <element signature="e#1064#1103#0" expanded="true" />
-            <element signature="e#1342#1360#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/WelcomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="32" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="1206">
-          <folding>
-            <element signature="docComment;method#onCreate#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="e#1971#2002#0" expanded="false" />
-            <element signature="method#setUserLocation#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#getRestaurants#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#getLocationService#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onSuccess#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onFailure#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onLocationChanged#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onStatusChanged#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onProviderEnabled#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onProviderDisabled#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <marker date="1402262649871" expanded="false" signature="2013:3255" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="58" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="576">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/MapActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="342">
-          <folding />
+        <state line="37" column="32" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="1206">
+          <folding>
+            <element signature="e#1540#1560#0" expanded="true" />
+            <element signature="method#onClick#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#moveCameraToLocation#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#setUserLocation#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#setupLocationClient#0;class#MapActivity#0" expanded="false" />
+            <element signature="e#4626#4656#0" expanded="true" />
+            <element signature="e#4849#4861#0" expanded="true" />
+            <element signature="method#success#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#failure#0;class#MapActivity#0" expanded="false" />
+            <element signature="e#6470#6515#0" expanded="true" />
+            <element signature="method#onConnected#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#onDisconnected#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#onConnectionFailed#0;class#MapActivity#0" expanded="false" />
+            <element signature="class#OurLocationListener#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#onLocationChanged#0;class#OurLocationListener#0;class#MapActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_places_list.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="58" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_places_list.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="234">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/PlacesListActivity.java">
@@ -1019,61 +949,51 @@
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="56" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="756">
-          <folding>
-            <element signature="e#688#706#0" expanded="true" />
-            <element signature="e#1064#1103#0" expanded="true" />
-            <element signature="e#1342#1360#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/WelcomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="15" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="864">
-          <folding>
-            <element signature="docComment;method#onCreate#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="e#1971#2002#0" expanded="false" />
-            <element signature="method#setUserLocation#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#getRestaurants#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#getLocationService#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onSuccess#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onFailure#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onLocationChanged#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onStatusChanged#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onProviderEnabled#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onProviderDisabled#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <marker date="1402262649871" expanded="false" signature="2013:3255" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="58" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="576">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/MapActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="342">
-          <folding />
+        <state line="36" column="15" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="864">
+          <folding>
+            <element signature="e#1540#1560#0" expanded="true" />
+            <element signature="method#onClick#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#moveCameraToLocation#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#setUserLocation#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#setupLocationClient#0;class#MapActivity#0" expanded="false" />
+            <element signature="e#4626#4656#0" expanded="true" />
+            <element signature="e#4849#4861#0" expanded="true" />
+            <element signature="method#success#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#failure#0;class#MapActivity#0" expanded="false" />
+            <element signature="e#6470#6515#0" expanded="true" />
+            <element signature="method#onConnected#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#onDisconnected#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#onConnectionFailed#0;class#MapActivity#0" expanded="false" />
+            <element signature="class#OurLocationListener#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#onLocationChanged#0;class#OurLocationListener#0;class#MapActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_places_list.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="58" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_places_list.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="234">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/PlacesListActivity.java">
@@ -1086,73 +1006,56 @@
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0" vertical-offset="158" max-vertical-offset="756">
-          <folding>
-            <element signature="e#688#706#0" expanded="true" />
-            <element signature="e#1064#1103#0" expanded="true" />
-            <element signature="e#1342#1360#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/WelcomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="15" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="864">
-          <folding>
-            <element signature="docComment;method#onCreate#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="e#1971#2002#0" expanded="false" />
-            <element signature="method#setUserLocation#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#getRestaurants#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#getLocationService#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onSuccess#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onFailure#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onLocationChanged#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onStatusChanged#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onProviderEnabled#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onProviderDisabled#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <marker date="1402262649871" expanded="false" signature="2013:3255" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="58" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="576">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/MapActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="342">
-          <folding />
+        <state line="36" column="15" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="864">
+          <folding>
+            <element signature="e#1540#1560#0" expanded="true" />
+            <element signature="method#onClick#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#moveCameraToLocation#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#setUserLocation#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#setupLocationClient#0;class#MapActivity#0" expanded="false" />
+            <element signature="e#4626#4656#0" expanded="true" />
+            <element signature="e#4849#4861#0" expanded="true" />
+            <element signature="method#success#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#failure#0;class#MapActivity#0" expanded="false" />
+            <element signature="e#6470#6515#0" expanded="true" />
+            <element signature="method#onConnected#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#onDisconnected#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#onConnectionFailed#0;class#MapActivity#0" expanded="false" />
+            <element signature="class#OurLocationListener#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#onLocationChanged#0;class#OurLocationListener#0;class#MapActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_places_list.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="58" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_places_list.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="234">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/PlacesListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="342">
-          <folding />
-        </state>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/PlacesListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+        <state line="11" column="34" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="342">
           <folding />
         </state>
       </provider>
@@ -1163,20 +1066,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_places_list.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="234">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1764">
-          <folding />
-        </state>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../SDKs/Android/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar!/com/google/android/gms/maps/MapFragment.class">
@@ -1184,42 +1080,9 @@
         <state line="6" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="0.15789473" vertical-offset="0" max-vertical-offset="1602" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../SDKs/Android/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/res/values/version.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="70" selection-end="70" vertical-scroll-proportion="0.091836736" vertical-offset="0" max-vertical-offset="392">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../SDKs/Android/android-sdk/sources/android-19/java/sql/Time.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="211" column="41" selection-start="6972" selection-end="6972" vertical-scroll-proportion="0.20327869" vertical-offset="3404" max-vertical-offset="4284" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/utils/NetworkUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/ErrorCodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="41" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="58" selection-start="198" selection-end="198" vertical-scroll-proportion="0.16875" vertical-offset="0" max-vertical-offset="576">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../SDKs/Android/android-sdk/sources/android-19/android/os/AsyncTask.java">
@@ -1245,47 +1108,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../SDKs/Android/android-sdk/sources/android-19/android/app/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1927" column="16" selection-start="85438" selection-end="85438" vertical-scroll-proportion="0.33333334" vertical-offset="32604" max-vertical-offset="96120">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../SDKs/Android/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar!/com/google/android/gms/maps/model/CameraPosition.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="182" selection-end="182" vertical-scroll-proportion="0.15789473" vertical-offset="0" max-vertical-offset="1134">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/MapActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="46" selection-start="614" selection-end="614" vertical-scroll-proportion="0.45801526" vertical-offset="0" max-vertical-offset="504">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/GenericApiResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="27" selection-start="362" selection-end="362" vertical-scroll-proportion="0.3060241" vertical-offset="107" max-vertical-offset="522">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/utils/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="29" selection-start="952" selection-end="952" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="6" column="19" selection-start="182" selection-end="182" vertical-scroll-proportion="0.15789473" vertical-offset="0" max-vertical-offset="1134" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/ActiveAndroid.jar!/com/activeandroid/app/Application.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.15437393" vertical-offset="0" max-vertical-offset="583">
+        <state line="6" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.15437393" vertical-offset="0" max-vertical-offset="583" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/ActiveAndroid.jar!/com/activeandroid/annotation/Column.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="23" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.34736842" vertical-offset="342" max-vertical-offset="1026" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ant.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../SDKs/Android/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/res/values/version.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="19" selection-start="70" selection-end="70" vertical-scroll-proportion="0.06282722" vertical-offset="0" max-vertical-offset="573">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.9647058" vertical-offset="1169" max-vertical-offset="1764">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../SDKs/Android/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar!/com/google/android/gms/location/LocationRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="11" selection-start="833" selection-end="833" vertical-scroll-proportion="0.34736842" vertical-offset="198" max-vertical-offset="1386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../SDKs/Android/android-sdk/sources/android-19/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5322" column="0" selection-start="224429" selection-end="224429" vertical-scroll-proportion="0.0" vertical-offset="93327" max-vertical-offset="96120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/PlacesListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="34" selection-start="323" selection-end="323" vertical-scroll-proportion="0.29605263" vertical-offset="0" max-vertical-offset="608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="41" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.34285715" vertical-offset="144" max-vertical-offset="774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/models/Restaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="42" selection-start="624" selection-end="624" vertical-scroll-proportion="-0.08571429" vertical-offset="450" max-vertical-offset="1242">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/ApiService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="54" selection-start="374" selection-end="374" vertical-scroll-proportion="0.40842786" vertical-offset="0" max-vertical-offset="617">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1296,77 +1200,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/utils/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="50" selection-start="972" selection-end="972" vertical-scroll-proportion="0.6857143" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/models/OpeningTime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="32" selection-start="1193" selection-end="1193" vertical-scroll-proportion="1.0" vertical-offset="112" max-vertical-offset="882">
+        <state line="40" column="32" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.74285716" vertical-offset="252" max-vertical-offset="882">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/utils/NetworkUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="56" selection-start="800" selection-end="800" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
-          <folding>
-            <element signature="e#688#706#0" expanded="true" />
-            <element signature="e#1064#1103#0" expanded="true" />
-            <element signature="e#1342#1360#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/ActiveAndroid.jar!/com/activeandroid/annotation/Column.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="23" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.34736842" vertical-offset="342" max-vertical-offset="1026">
+        <state line="14" column="33" selection-start="365" selection-end="365" vertical-scroll-proportion="0.35008103" vertical-offset="0" max-vertical-offset="617">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/models/Restaurant.java">
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="42" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1170">
-          <folding>
-            <element signature="docComment;class#Restaurant#0" expanded="false" />
-            <element signature="method#getLocation#0;class#Restaurant#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/ApiClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="39" selection-start="3416" selection-end="3416" vertical-scroll-proportion="-6.9259257" vertical-offset="839" max-vertical-offset="2664">
-          <folding>
-            <element signature="e#3796#3811#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/api/RestaurantListCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+        <state line="4" column="56" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/WelcomeActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.08223684" vertical-offset="184" max-vertical-offset="792">
+        <state line="15" column="0" selection-start="544" selection-end="544" vertical-scroll-proportion="-10.384615" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../SDKs/Android/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar!/com/google/android/gms/maps/GoogleMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="22" selection-start="3627" selection-end="3627" vertical-scroll-proportion="0.3462838" vertical-offset="1055" max-vertical-offset="3348">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joshliberty/veganfriendly/MapActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="31" selection-start="4276" selection-end="4276" vertical-scroll-proportion="0.39202657" vertical-offset="962" max-vertical-offset="2988">
           <folding>
-            <element signature="docComment;method#onCreate#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="e#1971#2002#0" expanded="false" />
-            <element signature="method#setUserLocation#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#getRestaurants#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#getLocationService#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onSuccess#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onFailure#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onLocationChanged#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onStatusChanged#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onProviderEnabled#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <element signature="method#onProviderDisabled#0;class#OurLocationListener#0;class#WelcomeActivity#0" expanded="false" />
-            <marker date="1402262649871" expanded="false" signature="2013:3255" placeholder="..." />
+            <element signature="e#1540#1560#0" expanded="true" />
+            <element signature="method#onClick#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#moveCameraToLocation#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#setUserLocation#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#setupLocationClient#0;class#MapActivity#0" expanded="false" />
+            <element signature="e#4626#4656#0" expanded="true" />
+            <element signature="e#4849#4861#0" expanded="true" />
+            <element signature="method#success#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#failure#0;class#MapActivity#0" expanded="false" />
+            <element signature="e#6470#6515#0" expanded="true" />
+            <element signature="method#onConnected#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#onDisconnected#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#onConnectionFailed#0;class#MapActivity#0" expanded="false" />
+            <element signature="class#OurLocationListener#0;class#MapActivity#0" expanded="false" />
+            <element signature="method#onLocationChanged#0;class#OurLocationListener#0;class#MapActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1448,7 +1347,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>android-support-v4</last-edited>
+          <last-edited>com.squareup.retrofit:retrofit:1.5.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1459,6 +1358,9 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
   </component>
 </project>
 
