@@ -107,7 +107,7 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
         Log.d(MapActivity.class.getSimpleName(), "Trying to get restaurants");
         long lastUpdate = App.getPreferences(this).getLong(LAST_UPDATE, 0);
         long timeDelta = new Date().getTime() - lastUpdate;
-        if(timeDelta > 604800){
+        if(timeDelta > 604800000){ // update weekly in any case todo add gcm receiver to receive push updates
             RestAdapter restAdapter = new RestAdapter.Builder().setEndpoint(ApiService.API_SERVER).build();
             ApiService service = restAdapter.create(ApiService.class);
             service.getRestaurants(mapCenter.target.latitude, mapCenter.target.longitude, this);
@@ -180,41 +180,10 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
     // Location Updates Listener
     private class OurCameraChangedListener implements GoogleMap.OnCameraChangeListener {
 
-        long lastMovedTime;
-        boolean taskRunning = false;
-        CameraPosition currentPosition;
-
         @Override
-        public void onCameraChange(CameraPosition cameraPosition) {
-            currentPosition = cameraPosition;
-
-            if(cameraPosition.zoom > 13){
-                lastMovedTime = new Date().getTime();
-                if(!taskRunning){
-                    taskRunning = true;
-                    new AsyncTask<Void, Void, Void>(){
-                        @Override
-                        protected Void doInBackground(Void... params) {
-                            long current = new Date().getTime();
-                            long timePassed = current - lastMovedTime;
-                            if(timePassed < 1000){
-                                try {
-                                    Thread.sleep(150l);
-                                    doInBackground();
-                                } catch (InterruptedException e) {
-                                    e.printStackTrace();
-                                }
-                            }
-                            taskRunning = false;
-                            return null;
-                        }
-                        @Override
-                        protected void onPostExecute(Void result){
-                            Log.d(MapActivity.class.getSimpleName(), "Enough time has passed. Refreshing restaurants.");
-                            showRestaurantsOnMap();
-                        }
-                    }.execute();
-                }
+        public void onCameraChange(final CameraPosition cameraPosition) {
+            if(cameraPosition.zoom > 12){
+                showRestaurantsOnMap();
             }
         }
 
