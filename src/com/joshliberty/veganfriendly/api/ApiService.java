@@ -12,7 +12,7 @@ import java.util.List;
  * This file is part of VeganFriendly.
  */
 public interface ApiService {
-    public static String API_SERVER = "http://10.0.0.9:5000";
+    public static String API_SERVER = "http://10.0.0.3:5000";
     @GET("/restaurants/{latitude}/{longitude}")
     void getRestaurants(@Path("latitude") double latitude, @Path("longitude") double longitude, Callback<List<Restaurant>> cb);
 }

@@ -37,7 +37,7 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
     private Location userLocation;
     private CameraPosition mapCenter;
 
-    List<Restaurant> knownRestaurants;
+    List<Restaurant> knownRestaurants = new ArrayList<Restaurant>();
     HashMap<Marker, Restaurant> markers = new HashMap<Marker, Restaurant>();
     private HashSet<Restaurant> addedRestaurants = new HashSet<Restaurant>();
     private LocationClient locationClient;
@@ -48,14 +48,22 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        MapFragment mapFragment = ((MapFragment) getFragmentManager().findFragmentById(R.id.map));
+        if(savedInstanceState == null){
+            mapFragment.setRetainInstance(true);
+        } else {
+            initialMoveDone = true;
+            map = mapFragment.getMap();
+        }
         // Init map
-        map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
-        map.setMyLocationEnabled(true);
-        mapCenter = map.getCameraPosition();
-        map.setOnCameraChangeListener(new OurCameraChangedListener());
+        setupMap();
 
         // Internal setup
         setupLocationClient();
+    }
+    protected void onResume(){
+        super.onResume();
+        setupMap();
     }
     public void onClick(View v) {
         switch (v.getId()){
@@ -80,15 +88,19 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
     private void setupLocationClient() {
         locationClient = new LocationClient(this, this, this);
         locationClient.connect();
-//        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-//        boolean enabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
-//        if(!enabled){
-//            Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
-//            startActivity(intent);
-//        }
     }
 
     // Restaurants on map
+    private void setupMap(){
+        if(map == null){
+            map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
+            if (map != null){
+                map.setMyLocationEnabled(true);
+                mapCenter = map.getCameraPosition();
+                map.setOnCameraChangeListener(new OurCameraChangedListener());
+            }
+        }
+    }
     private void clearMap(){
         markers.clear();
         addedRestaurants.clear();
@@ -97,7 +109,14 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
     private void addRestaurant(Restaurant restaurant){
         LatLng latLng = new LatLng(restaurant.getLatitude(), restaurant.getLongitude());
         if(!addedRestaurants.contains(restaurant)){
-            Marker m = map.addMarker(new MarkerOptions().position(latLng).title(restaurant.getName()));
+            BitmapDescriptor descriptor;
+            if(restaurant.isIs_vegan()){
+                descriptor = BitmapDescriptorFactory.fromResource(R.drawable.marker_vegan);
+            } else {
+                descriptor = BitmapDescriptorFactory.fromResource(R.drawable.marker_default);
+            }
+            MarkerOptions options = new MarkerOptions().position(latLng).title(restaurant.getName()).icon(descriptor);
+            Marker m = map.addMarker(options);
             markers.put(m, restaurant);
             addedRestaurants.add(restaurant);
         }
