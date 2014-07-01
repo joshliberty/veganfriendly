@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey">#ededed</color>
+    <color name="text_color">#ff444444</color>
+    <color name="separator">#ff4b7000</color>
+</resources>

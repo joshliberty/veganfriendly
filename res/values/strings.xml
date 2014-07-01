@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">VeganFriendly</string>
-    <string name="view_list">View as list</string>
-    <string name="center_on_location">Center on Location</string>
-    <string name="no_internet_connection">No internet access</string>
-    <string name="waiting_location">Waiting for location...</string>
-    <string name="your_location">Your location</string>
-    <string name="error_getting_restaurants">Error retrieving restaurant list.</string>
+    <string name="view_list">הצג כרשימה</string>
+    <string name="no_internet_connection">אין חיבור אינטרנט</string>
+    <string name="error_getting_restaurants">שגיאה בטעינת רשימת המסעדות.</string>
+    <string name="no_location">שירותי מיקום לא פעילים</string>
+    <string name="enable_location">אנו ממליצים להפעיל את שירותי המיקום על מנת לראות מסעדות בסביבתכם.</string>
+    <string name="go_to_settings">הפעלה</string>
+    <string name="cancel">ביטול</string>
+    <string name="rest_photo_desc">תמונת המסעדה</string>
+    <string name="navigate">ניווט למסעדה</string>
+    <string name="call">חיוג למסעדה</string>
+
+
 </resources>

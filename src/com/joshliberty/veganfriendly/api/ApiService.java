@@ -5,6 +5,7 @@ import retrofit.Callback;
 import retrofit.http.GET;
 import retrofit.http.Path;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -12,7 +13,10 @@ import java.util.List;
  * This file is part of VeganFriendly.
  */
 public interface ApiService {
-    public static String API_SERVER = "http://10.0.0.3:5000";
+    public static String API_SERVER = "http://futuremeat.org:8080";
+    public static String STATIC_PATH = "/static/";
     @GET("/restaurants/{latitude}/{longitude}")
     void getRestaurants(@Path("latitude") double latitude, @Path("longitude") double longitude, Callback<List<Restaurant>> cb);
+    @GET("/static/{filename}")
+    void getImage(@Path("filename") String filename, Callback<File> cb);
 }

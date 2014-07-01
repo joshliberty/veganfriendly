@@ -1,5 +1,7 @@
 package com.joshliberty.veganfriendly.models;
 
+import android.os.Parcel;
+import android.os.Parcelable;
 import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
@@ -26,17 +28,23 @@ public class Restaurant extends Model {
     @Column(name="Longitude", index = true)
     public double longitude;
 
-    @Column(name="City")
-    public String city;
-
-    @Column(name="Street")
-    public String street;
+    @Column(name="Address")
+    public String address;
 
     @Column(name="Cuisine")
     public String cuisine;
 
     @Column(name="Is_vegan")
     public boolean is_vegan;
+
+    @Column(name="Is_recommended")
+    public boolean is_recommended;
+
+    @Column(name="Image_name")
+    public String image_name;
+
+    @Column(name="Image_fetched")
+    public boolean image_fetched;
 
     @Column(name="Opening_times")
     public OpeningTime opening_times;
@@ -47,6 +55,12 @@ public class Restaurant extends Model {
     }
 
     // Getters and setters
+    public String getPhone() {
+        return phone;
+    }
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
     public String getName() {
         return name;
     }
@@ -71,17 +85,11 @@ public class Restaurant extends Model {
     public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
-    public String getCity() {
-        return city;
+    public String getAddress() {
+        return address;
     }
-    public void setCity(String city) {
-        this.city = city;
-    }
-    public String getStreet() {
-        return street;
-    }
-    public void setStreet(String street) {
-        this.street = street;
+    public void setAddress(String address) {
+        this.address = address;
     }
     public String getCuisine() {
         return cuisine;
@@ -95,4 +103,29 @@ public class Restaurant extends Model {
     public void setIs_vegan(boolean is_vegan) {
         this.is_vegan = is_vegan;
     }
+    public boolean isIs_recommended() {
+        return is_recommended;
+    }
+    public void setIs_recommended(boolean is_recommended) {
+        this.is_recommended = is_recommended;
+    }
+    public String getImage_name() {
+        return image_name;
+    }
+    public void setImage_name(String image_name) {
+        this.image_name = image_name;
+    }
+    public OpeningTime getOpening_times() {
+        return opening_times;
+    }
+    public void setOpening_times(OpeningTime opening_times) {
+        this.opening_times = opening_times;
+    }
+    public boolean isImage_fetched() {
+        return image_fetched;
+    }
+    public void setImage_fetched(boolean image_fetched) {
+        this.image_fetched = image_fetched;
+    }
+
 }

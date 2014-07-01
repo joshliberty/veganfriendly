@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layoutDirection="rtl"
+              android:textDirection="rtl">
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/restaurant_name"
+                  android:textStyle="bold"
+                  android:textColor="@color/text_color" />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/restaurant_address"
+                  android:textColor="@color/text_color" />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/restaurant_phone"
+                  android:textColor="@color/text_color" />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/restaurant_style"
+                  android:textColor="@android:color/white"
+                  android:background="@drawable/rounded"
+                  android:padding="3dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:padding="5dp"
+            android:layout_marginStart="10dp">
+
+        <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="3dp"
+                android:background="@android:color/white"
+                android:contentDescription="@string/rest_photo_desc"
+                android:src="@drawable/no_image"
+                android:id="@+id/imageView"
+                android:scaleType="fitCenter"
+                android:layout_gravity="left" />
+
+    </FrameLayout>
+
+</LinearLayout>
