@@ -102,10 +102,11 @@ public class RestaurantActivity extends Activity implements View.OnClickListener
                 try { // Try waze first for navigation
                     String url = "waze://?q="+encodedAddress;
                     intent = new Intent( Intent.ACTION_VIEW, Uri.parse( url ) );
+                    startActivity(intent);
                 } catch(ActivityNotFoundException ex){
                     intent = new Intent(Intent.ACTION_VIEW, Uri.parse("google.navigation:q="+encodedAddress));
+                    startActivity(intent);
                 }
-                startActivity(intent);
                 break;
             case R.id.call:
                 String phone = restaurant.getPhone();
