@@ -49,6 +49,9 @@ public class Restaurant extends Model {
     @Column(name="Opening_times")
     public OpeningTime opening_times;
 
+    @Column(name="Opening_time_id")
+    public Integer opening_time;
+
     // Public API
     public LatLng getLocation(){
         return new LatLng(latitude, longitude);
@@ -127,5 +130,10 @@ public class Restaurant extends Model {
     public void setImage_fetched(boolean image_fetched) {
         this.image_fetched = image_fetched;
     }
-
+    public Integer getOpening_time() {
+        return opening_time;
+    }
+    public void setOpening_time(Integer opening_time) {
+        this.opening_time = opening_time;
+    }
 }

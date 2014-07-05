@@ -15,8 +15,8 @@ import java.util.List;
 public interface ApiService {
     public static String API_SERVER = "http://futuremeat.org:8080";
     public static String STATIC_PATH = "/static/";
-    @GET("/restaurants/{latitude}/{longitude}")
-    void getRestaurants(@Path("latitude") double latitude, @Path("longitude") double longitude, Callback<List<Restaurant>> cb);
+    @GET("/restaurants/")
+    void getRestaurants(Callback<List<Restaurant>> cb);
     @GET("/static/{filename}")
     void getImage(@Path("filename") String filename, Callback<File> cb);
 }

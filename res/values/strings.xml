@@ -3,7 +3,7 @@
     <string name="app_name">VeganFriendly</string>
     <string name="view_list">הצג כרשימה</string>
     <string name="no_internet_connection">אין חיבור אינטרנט</string>
-    <string name="error_getting_restaurants">שגיאה בטעינת רשימת המסעדות.</string>
+    <string name="error_getting_restaurants">אירעה שגיאה בעת ההתחברות לשרת. אנא ודאו כי אתם מחוברים לאינטרנט, ונסו שנית.</string>
     <string name="no_location">שירותי מיקום לא פעילים</string>
     <string name="enable_location">אנו ממליצים להפעיל את שירותי המיקום על מנת לראות מסעדות בסביבתכם.</string>
     <string name="go_to_settings">הפעלה</string>
@@ -11,6 +11,8 @@
     <string name="rest_photo_desc">תמונת המסעדה</string>
     <string name="navigate">ניווט למסעדה</string>
     <string name="call">חיוג למסעדה</string>
+    <string name="error">שגיאת התחברות</string>
+    <string name="retry">נסה שנית</string>
 
 
 </resources>

@@ -33,6 +33,7 @@ import retrofit.client.Response;
 
 import java.util.*;
 
+@SuppressWarnings("unchecked")
 public class MapActivity extends Activity implements Callback<List<Restaurant>>,
         GooglePlayServicesClient.ConnectionCallbacks,
         GooglePlayServicesClient.OnConnectionFailedListener, View.OnClickListener {
@@ -48,6 +49,8 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
     FileDownloader fileDownloader;
     private LocationClient locationClient;
     private boolean initialMoveDone;
+    private boolean gettingRestaurants;
+    private boolean active = false;
 
     // Android Framework Callbacks
     public void onCreate(Bundle savedInstanceState) {
@@ -66,12 +69,20 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
         super.onResume();
         setupMap();
         setupLocationClient();
-        if(restaurantsInDb == null){
+        if(!gettingRestaurants && (restaurantsInDb == null || restaurantsInDb.size() == 0)){
             getRestaurants();
         } else {
             showRestaurantsOnMap();
         }
 
+    }
+    protected void onStart(){
+        super.onStart();
+        active = true;
+    }
+    protected void onStop(){
+        super.onStop();
+        active = false;
     }
     public void onClick(View v) {
         switch (v.getId()){
@@ -90,7 +101,6 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
         if(!initialMoveDone){
             initialMoveDone = true;
             moveCameraToLocation(userLocation.getLatitude(), userLocation.getLongitude());
-            getRestaurants();
         }
     }
     private void startLocationClient(){
@@ -149,7 +159,6 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
                         @Override
                         public void onCancel(DialogInterface dialog) {
                             Log.d(MapActivity.class.getSimpleName(), "Dialog cancelled. We'll get restaurants");
-                            getRestaurants();
                             dialog.dismiss();
                         }
                     });
@@ -181,6 +190,7 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
                 restaurantsInDb.addAll(restaurantsToAdd);
                 showRestaurantsOnMap();
                 fileDownloader.fetchMissingImages();
+                gettingRestaurants = false;
             }
         }.execute(restaurants);
 
@@ -227,6 +237,7 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
         }
     }
     private void getRestaurants(){
+        gettingRestaurants = true;
         Log.d(MapActivity.class.getSimpleName(), "Loading restaurants from db");
         restaurantsInDb = new Select().from(Restaurant.class).execute();
         Log.d(MapActivity.class.getSimpleName(), "Got "+ restaurantsInDb.size()+" restaurants");
@@ -236,12 +247,13 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
             Log.d(MapActivity.class.getSimpleName(), "Trying to get restaurants from server");
             RestAdapter restAdapter = new RestAdapter.Builder().setEndpoint(ApiService.API_SERVER).build();
             ApiService service = restAdapter.create(ApiService.class);
-            service.getRestaurants(mapCenter.target.latitude, mapCenter.target.longitude, this);
+            service.getRestaurants(this);
+        } else {
+            gettingRestaurants = false;
         }
         showRestaurantsOnMap();
         fileDownloader.fetchMissingImages();
     }
-    @SuppressWarnings("unchecked")
     private void showRestaurantsOnMap(){
         Log.d(MapActivity.class.getSimpleName(), "Showing restaurants in map");
         Log.d(MapActivity.class.getSimpleName(), "Zoom level is "+mapCenter.zoom);
@@ -266,13 +278,35 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
         handleRetrievedRestaurants(restaurants);
     }
     public void failure(RetrofitError error) {
+        gettingRestaurants = false;
         String err;
         if(error == null || error.getResponse() == null || error.getBody() == null){
             err = "Unknown Error";
         } else {
             err = error.getBody().toString();
         }
-        Toast.makeText(this, getString(R.string.error_getting_restaurants)+err, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, getString(R.string.error_getting_restaurants), Toast.LENGTH_LONG).show();
+
+        if(active){
+            DialogUtil.showDialog(this, R.string.error,
+                    R.string.error_getting_restaurants,
+                    R.string.retry,
+                    R.string.cancel,
+                    new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            getRestaurants();
+                            dialog.dismiss();
+                        }
+                    },
+                    new DialogInterface.OnCancelListener() {
+                        @Override
+                        public void onCancel(DialogInterface dialog) {
+                            Log.d(MapActivity.class.getSimpleName(), "Dialog cancelled.");
+                            dialog.dismiss();
+                        }
+                    });
+        }
     }
 
     // Location Service Callbacks
