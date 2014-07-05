@@ -66,6 +66,12 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
         super.onResume();
         setupMap();
         setupLocationClient();
+        if(restaurantsInDb == null){
+            getRestaurants();
+        } else {
+            showRestaurantsOnMap();
+        }
+
     }
     public void onClick(View v) {
         switch (v.getId()){
@@ -150,58 +156,7 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
         }
     }
 
-    // Restaurants on map
-    private void setupMap(){
-        if(map == null){
-            map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
-            if (map != null){
-                map.setInfoWindowAdapter(new InfoWindow(getLayoutInflater(), markersOnMap, this));
-                map.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
-                    @Override
-                    public void onInfoWindowClick(Marker marker) {
-                        Restaurant restaurant = markersOnMap.get(marker);
-                        Intent intent = new Intent(MapActivity.this, RestaurantActivity.class);
-                        intent.putExtra(RestaurantActivity.RESTAURANT_ID, restaurant.getId());
-                        startActivity(intent);
-                    }
-                });
-                map.setMyLocationEnabled(true);
-                mapCenter = map.getCameraPosition();
-                map.setOnCameraChangeListener(new OurCameraChangedListener());
-            }
-        }
-    }
-    private void addRestaurant(Restaurant restaurant){
-        LatLng latLng = new LatLng(restaurant.getLatitude(), restaurant.getLongitude());
-        if(!markersOnMap.values().contains(restaurant)){
-            BitmapDescriptor descriptor;
-            if(restaurant.isIs_vegan()){
-                descriptor = BitmapDescriptorFactory.fromResource(R.drawable.marker_vegan);
-            } else {
-                descriptor = BitmapDescriptorFactory.fromResource(R.drawable.marker_default);
-            }
-            MarkerOptions options = new MarkerOptions().position(latLng).title(restaurant.getName()).icon(descriptor);
-            Marker m = map.addMarker(options);
-            markersOnMap.put(m, restaurant);
-        }
-    }
-    private void getRestaurants(){
-        Log.d(MapActivity.class.getSimpleName(), "Loading restaurants from db");
-        restaurantsInDb = new Select().from(Restaurant.class).execute();
-        Log.d(MapActivity.class.getSimpleName(), "Got "+ restaurantsInDb.size()+" restaurants");
-        long lastUpdate = App.getPreferences(this).getLong(LAST_UPDATE, 0);
-        long timeDelta = new Date().getTime() - lastUpdate;
-        if(timeDelta > 604800000){ // update weekly in any case todo add gcm receiver to receive push updates
-            Log.d(MapActivity.class.getSimpleName(), "Trying to get restaurants from server");
-            RestAdapter restAdapter = new RestAdapter.Builder().setEndpoint(ApiService.API_SERVER).build();
-            ApiService service = restAdapter.create(ApiService.class);
-            service.getRestaurants(mapCenter.target.latitude, mapCenter.target.longitude, this);
-        } else {
-            showRestaurantsOnMap();
-            fileDownloader.fetchMissingImages();
-        }
-    }
-    @SuppressWarnings("unchecked")
+    // Connection to API
     private void handleRetrievedRestaurants(List<Restaurant> restaurants) {
         new AsyncTask<List<Restaurant>, Void, Void>(){
             List<Restaurant> restaurantsToAdd = new ArrayList<Restaurant>();
@@ -231,6 +186,62 @@ public class MapActivity extends Activity implements Callback<List<Restaurant>>,
 
 
     }
+
+    // Restaurants on map
+    private void openRestaurant(Marker marker){
+        Restaurant restaurant = markersOnMap.get(marker);
+        Intent intent = new Intent(MapActivity.this, RestaurantActivity.class);
+        intent.putExtra(RestaurantActivity.RESTAURANT_ID, restaurant.getId());
+        startActivity(intent);
+    }
+    private void setupMap(){
+        if(map == null){
+            map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
+            if (map != null){
+                map.setInfoWindowAdapter(new InfoWindow(getLayoutInflater(), markersOnMap, this));
+                map.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+                    @Override
+                    public void onInfoWindowClick(Marker marker) {
+                        openRestaurant(marker);
+                    }
+                });
+            }
+        }
+        map.setMyLocationEnabled(true);
+        mapCenter = map.getCameraPosition();
+        map.setOnCameraChangeListener(new OurCameraChangedListener());
+
+    }
+    private void addRestaurant(Restaurant restaurant){
+        LatLng latLng = new LatLng(restaurant.getLatitude(), restaurant.getLongitude());
+        if(!markersOnMap.values().contains(restaurant)){
+            BitmapDescriptor descriptor;
+            if(restaurant.isIs_vegan()){
+                descriptor = BitmapDescriptorFactory.fromResource(R.drawable.marker_vegan);
+            } else {
+                descriptor = BitmapDescriptorFactory.fromResource(R.drawable.marker_default);
+            }
+            MarkerOptions options = new MarkerOptions().position(latLng).title(restaurant.getName()).icon(descriptor);
+            Marker m = map.addMarker(options);
+            markersOnMap.put(m, restaurant);
+        }
+    }
+    private void getRestaurants(){
+        Log.d(MapActivity.class.getSimpleName(), "Loading restaurants from db");
+        restaurantsInDb = new Select().from(Restaurant.class).execute();
+        Log.d(MapActivity.class.getSimpleName(), "Got "+ restaurantsInDb.size()+" restaurants");
+        long lastUpdate = App.getPreferences(this).getLong(LAST_UPDATE, 0);
+        long timeDelta = new Date().getTime() - lastUpdate;
+        if(timeDelta > 604800000){ // update weekly in any case todo add gcm receiver to receive push updates
+            Log.d(MapActivity.class.getSimpleName(), "Trying to get restaurants from server");
+            RestAdapter restAdapter = new RestAdapter.Builder().setEndpoint(ApiService.API_SERVER).build();
+            ApiService service = restAdapter.create(ApiService.class);
+            service.getRestaurants(mapCenter.target.latitude, mapCenter.target.longitude, this);
+        }
+        showRestaurantsOnMap();
+        fileDownloader.fetchMissingImages();
+    }
+    @SuppressWarnings("unchecked")
     private void showRestaurantsOnMap(){
         Log.d(MapActivity.class.getSimpleName(), "Showing restaurants in map");
         Log.d(MapActivity.class.getSimpleName(), "Zoom level is "+mapCenter.zoom);
